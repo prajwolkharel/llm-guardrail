@@ -2,7 +2,7 @@
 
 from .pipeline import run_pipeline
 from .loaders import load_combined
-from .features import enginner_all
+from .features import engineer_all
 from .validation import validate_dataset
 
 
