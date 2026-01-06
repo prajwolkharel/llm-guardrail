@@ -45,10 +45,10 @@ def train_baseline():
         per_device_train_batch_size=BATCH_SIZE,
         per_device_eval_batch_size=BATCH_SIZE,
         learning_rate=LEARNING_RATE,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",           # ← changed
         save_strategy="epoch",
         load_best_model_at_end=True,
-        metric_for_best_model="f1",
+        metric_for_best_model="eval_f1", # ← changed
         report_to="none",
     )
 
